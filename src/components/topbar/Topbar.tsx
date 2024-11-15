@@ -1,6 +1,6 @@
 "use client";
 
-import logo_zstio from "@/assets/logo-zstio.png";
+import logo_school from "@/assets/school-logo.png";
 import { ShortLessonSwitcherCell } from "@/components/timetable/Cells";
 import { translationDict } from "@/constants/translations";
 import { OptivumTimetable } from "@/types/optivum";
@@ -81,12 +81,12 @@ export const Topbar: FC<TopbarProps> = ({ timetable, substitutions }) => {
 
 const SchoolLink: FC = () => (
   <Link
-    href="https://zstiojar.edu.pl"
+    href={process.env.NEXT_PUBLIC_SCHOOL_WEBSITE as string}
     className="group inline-flex w-fit items-center gap-x-4"
   >
     <Image
-      src={logo_zstio}
-      alt="Logo szkoły ZSTiO"
+      src={logo_school}
+      alt={`Logo szkoły ${process.env.NEXT_PUBLIC_SCHOOL_SHORT}`}
       className="aspect-square w-10"
     />
     <div className="inline-flex items-center gap-x-2 text-primary/70 transition-colors group-hover:text-primary/90 max-md:hidden">
