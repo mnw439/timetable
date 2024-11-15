@@ -21,13 +21,7 @@ const nextConfig: NextConfig = {
   },
 
   webpack: (config) => {
-    checkEnvVariables([
-      "NEXT_PUBLIC_TIMETABLE_URL",
-      "NEXT_PUBLIC_APP_URL",
-      "NEXT_PUBLIC_SCHOOL_NAME_ACCUSATIVE",
-      "NEXT_PUBLIC_SCHOOL_SHORT",
-      "NEXT_PUBLIC_SCHOOL_WEBSITE",
-    ]);
+    checkEnvVariables(["NEXT_PUBLIC_TIMETABLE_URL", "NEXT_PUBLIC_APP_URL"]);
 
     return config;
   },

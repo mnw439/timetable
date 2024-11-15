@@ -19,11 +19,11 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    template: `%s | ${process.env.NEXT_PUBLIC_SCHOOL_SHORT} - Plan lekcji`,
-    default: `${process.env.NEXT_PUBLIC_SCHOOL_SHORT} - Plan lekcji`,
+    template: "%s | ZSTiO - Plan lekcji",
+    default: "ZSTiO - Plan lekcji",
   },
   description:
-    `W prosty sposób sprawdź plan zajęć i zastępstwa dla różnych klas, nauczycieli oraz sal w ${process.env.NEXT_PUBLIC_SCHOOL_NAME_ACCUSATIVE}.`,
+    "W prosty sposób sprawdź plan zajęć i zastępstwa dla różnych klas, nauczycieli oraz sal w Zespole Szkół Technicznych i Ogólnokształcących im. Stefana Banacha w Jarosławiu.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL as string),
 
   alternates: {
